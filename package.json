@@ -1,6 +1,6 @@
 {
   "name": "carousel-pdf-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deterministic text-to-carousel PDF generator for LinkedIn and X. Converts markdown and articles into high-resolution multi-page slide decks. Zero browser overhead.",
   "main": "src/index.js",
   "module": "src/index.js",
