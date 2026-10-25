@@ -1,0 +1,54 @@
+{
+  "name": "carousel-pdf-cli",
+  "version": "1.0.0",
+  "description": "Deterministic text-to-carousel PDF generator for LinkedIn and X. Converts markdown and articles into high-resolution multi-page slide decks. Zero browser overhead.",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "type": "module",
+  "bin": {
+    "carousel-pdf": "bin/cli.js",
+    "carousel-pdf-cli": "bin/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "INTEGRATION_GUIDE.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/postready/carousel-pdf.git"
+  },
+  "keywords": [
+    "linkedin-carousel",
+    "carousel-generator",
+    "pdf-generator",
+    "text-to-carousel",
+    "content-repurposing",
+    "social-media",
+    "cli",
+    "developer-tools"
+  ],
+  "author": "eco-null <emrecanozdal@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "pdfkit": "^0.15.2"
+  }
+}
